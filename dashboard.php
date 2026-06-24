@@ -81,7 +81,9 @@ $chart_data = array_values($weeklyValues);
 
         <div class="chart-card">
             <h2>Weekly Energy Usage</h2>
-            <canvas id="energyChart"></canvas>
+            <div style="position: relative; height: 320px; width: 100%;">
+                <canvas id="energyChart"></canvas>
+            </div>
         </div>
     </main>
 </div>

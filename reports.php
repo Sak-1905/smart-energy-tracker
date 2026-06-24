@@ -85,7 +85,9 @@ foreach ($monthMap as $month) {
 
         <div class="chart-card">
             <h2>6-Month Energy Trend</h2>
-            <canvas id="reportsChart"></canvas>
+            <div style="position: relative; height: 320px; width: 100%;">
+                <canvas id="reportsChart"></canvas>
+            </div>
         </div>
     </main>
 </div>
