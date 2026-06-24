@@ -14,5 +14,6 @@ $activePage = $activePage ?? '';
         <li><a href="add_usage.php" class="<?= $activePage === 'add' ? 'active' : '' ?>">Add Data</a></li>
         <li><a href="reports.php" class="<?= $activePage === 'reports' ? 'active' : '' ?>">Reports</a></li>
         <li><a href="tips.php" class="<?= $activePage === 'tips' ? 'active' : '' ?>">Tips</a></li>
+        <li><a href="manage.php" class="<?= $activePage === 'manage' ? 'active' : '' ?>">Manage Data</a></li>
     </ul>
 </aside>

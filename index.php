@@ -1,6 +1,12 @@
 <?php include 'includes/header.php'; ?>
 
 <section class="hero">
+    <div class="hero-animation">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+    </div>
     <div class="hero-content">
         <span class="eyebrow">Smart Energy Tracker</span>
         <h1>Track Your Energy Usage Smartly</h1>

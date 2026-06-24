@@ -80,12 +80,66 @@ html{
     place-items:center;
     text-align:center;
     padding:120px 20px;
-    background:linear-gradient(180deg, rgba(24, 120, 242, 0.78), rgba(26, 151, 146, 0.78)),
+    background:linear-gradient(180deg, rgba(24, 120, 242, 0.95), rgba(26, 151, 146, 0.9)),
         url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
     color:#ffffff;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-animation{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.hero-animation .shape{
+    position:absolute;
+    border-radius:50%;
+    opacity:0.65;
+    filter: blur(10px);
+}
+
+.hero-animation .shape-1{
+    width:180px;
+    height:180px;
+    background:rgba(255,255,255,0.22);
+    top:10%;
+    left:12%;
+    animation: floatSlow 9s ease-in-out infinite;
+}
+
+.hero-animation .shape-2{
+    width:220px;
+    height:220px;
+    background:rgba(255,255,255,0.12);
+    bottom:10%;
+    right:18%;
+    animation: floatMedium 11s ease-in-out infinite;
+}
+
+.hero-animation .shape-3{
+    width:140px;
+    height:140px;
+    background:rgba(255,255,255,0.18);
+    top:20%;
+    right:20%;
+    animation: floatFast 7s ease-in-out infinite;
+}
+
+.hero-animation .shape-4{
+    width:120px;
+    height:120px;
+    background:rgba(255,255,255,0.2);
+    bottom:25%;
+    left:25%;
+    animation: floatSlow 10s ease-in-out infinite;
 }
 
 .hero-content{
+    position:relative;
+    z-index:1;
     max-width:780px;
 }
 
@@ -93,11 +147,26 @@ html{
     display:inline-block;
     margin-bottom:22px;
     padding:10px 18px;
-    background:rgba(255,255,255,0.18);
+    background:rgba(255,255,255,0.22);
     border-radius:999px;
     text-transform:uppercase;
     letter-spacing:0.16em;
     font-size:0.8rem;
+}
+
+@keyframes floatSlow{
+    0%,100%{transform:translateY(0) translateX(0);}
+    50%{transform:translateY(-20px) translateX(10px);}
+}
+
+@keyframes floatMedium{
+    0%,100%{transform:translateY(0) translateX(0);}
+    50%{transform:translateY(-30px) translateX(-14px);}
+}
+
+@keyframes floatFast{
+    0%,100%{transform:translateY(0) translateX(0);}
+    50%{transform:translateY(-16px) translateX(18px);}
 }
 
 .hero h1{
